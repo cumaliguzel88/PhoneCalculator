@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="back1">#d81b60</color>
+    <color name="back2">#ad1457</color>
+    <color name="back3">#f50057</color>
+    <color name="bacakMain">#b2ebf2</color>
+    <color name="backButton">#ffa726</color>
+
+
+</resources>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/tvFormula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="More Fonts..."
+        android:text=""
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="60dp"
+        android:gravity="end"
+        android:textColor="@color/white"
+        tools:text="formula"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResult"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_thin"
+        android:gravity="end"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/tvFormula"/>
+    <GridLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="40dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult">
+        <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/clear"
+        android:layout_rowWeight="1"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="2"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/backButton"
+        android:text="C"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:cornerRadius="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/plus"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/backButton"
+            android:text="+"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/device"
+            android:layout_rowWeight="2"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/backButton"
+            android:text="/"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/seven"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/backButton"
+            android:background="@android:color/transparent"
+            android:text="7"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/eight"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/backButton"
+            android:background="@android:color/transparent"
+            android:text="8"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/nine"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/backButton"
+            android:background="@android:color/transparent"
+            android:text="9"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/multiply"
+            android:layout_rowWeight="2"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/backButton"
+            android:text="*"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/four"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/backButton"
+            android:background="@android:color/transparent"
+            android:text="4"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/five"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/backButton"
+            android:background="@android:color/transparent"
+            android:text="5"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/six"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/backButton"
+            android:background="@android:color/transparent"
+            android:text="6"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/mines"
+            android:layout_rowWeight="2"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/backButton"
+            android:text="-"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/one"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/backButton"
+            android:background="@android:color/transparent"
+            android:text="1"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/two"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/backButton"
+            android:background="@android:color/transparent"
+            android:text="2"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/three"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/backButton"
+            android:background="@android:color/transparent"
+            android:text="3"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/equal"
+            android:layout_rowWeight="2"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/backButton"
+            android:text="="
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/zero"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="2"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/backButton"
+            android:background="@android:color/transparent"
+            android:text="0"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/dought"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="2"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/backButton"
+            android:background="@android:color/transparent"
+            android:text="."
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"/>
+
+
+
+
+
+
+
+
+
+
+    </GridLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
